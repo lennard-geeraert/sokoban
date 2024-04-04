@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" hgap="10.0" type="GridPane" vgap="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <ComboBox fx:id="cmbSpelltjes" prefHeight="25.0" prefWidth="180.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Button fx:id="btnVerlaten" mnemonicParsing="false" onAction="#btnVerlatenAfhandeling" prefHeight="26.0" prefWidth="101.0" text="Verlaten" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnSpeelSpel" mnemonicParsing="false" onAction="#btnSpeelSpelAfhandeling" prefHeight="26.0" prefWidth="98.0" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</fx:root>
